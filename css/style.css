@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Irish+Grover&family=Space+Mono&display=swap');
+
+
+
+
+
+body{
+    margin: 0px;
+    background-color: #030303;
+    /* font-family: 'Space Mono', monospace; */
+    font-family: 'Anonymous Pro', monospace;
+    position: relative;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/************** animation container Start ******** */
+
+.animations-container{
+
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.lefttoright{
+    height:100%;
+    width: 100%;
+    padding: 5% 0 ;
+    display: flex;
+    align-items: center;
+    opacity: .15;
+
+}
+
+.lefttoright .line{
+    height:1px;
+    width: 0px;
+    background-color: #00F23E;
+}
+
+.left-animation div:nth-child(n) .line{
+    animation: filler-right 15s linear infinite ;
+
+}
+
+.left-animation div:nth-child(2n + 1) .line{
+    animation: filler-right 8s linear infinite 2s ;
+
+}
+
+.lefttoright .dot{
+    height:5px;
+    width: 5px;
+    background-color: #00F23E;
+    border-radius: 100% ;   
+}
+
+
+
+
+
+
+
+.righttoleft{
+    height:100%;
+    width: 100%;
+    padding: 5% 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .0;
+
+}
+
+.righttoleft .line{
+    height:1px;
+    width: 0px;
+    background-color: white;
+}
+
+.left-animation div:nth-child(n) .line{
+    animation: filler-left 15s linear infinite ;
+
+}
+
+.left-animation div:nth-child(2n + 1) .line{
+    animation: filler-left 8s linear infinite 2s ;
+
+}
+
+.righttoleft .dot{
+    height:5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 100% ;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.top-animation {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute ;
+    top: 0%;
+}
+
+.toptobottom{
+    height:100%;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: .15;
+    padding: 0% 5%;
+}
+
+.toptobottom .line{
+    height:0px;
+    width: 1px;
+    background-color: #00F23E;
+}
+
+.top-animation div:nth-child(n) .line{
+    animation: filler-bottom 4s linear infinite 5s ;
+
+}
+
+.top-animation div:nth-child(2n + 1) .line{
+    animation: filler-bottom 5s linear infinite 2s ;
+
+}
+
+.top-animation div:nth-child(3n + 1) .line{
+    animation: filler-bottom 10s linear infinite  ;
+
+}
+
+
+.toptobottom .dot{
+    height: 5px;
+    width: 5px;
+    background-color: #00F23E;
+    border-radius: 100% ;   
+}
+
+
+
+
+
+.bottom-animation {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute ;
+    top: 0%;
+    bottom:0%;
+}
+
+.bottomtotop{
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    
+    opacity: 1;
+    padding: 0% 5%;
+}
+
+.bottomtotop .line{
+    height:0px;
+    width: 1px;
+    background-color: white;
+}
+
+.bottom-animation div:nth-child(n) .line{
+    animation: filler-bottom 4s linear infinite 5s ;
+
+}
+
+.bottom-animation div:nth-child(2n + 1) .line{
+    animation: filler-top 5s linear infinite 2s ;
+
+}
+
+.bottom-animation div:nth-child(3n + 1) .line{
+    animation: filler-top 10s linear infinite  ;
+
+}
+
+
+.bottomtotop .dot{
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 100% ;   
+}
+
+
+
+
+/* ************** About Container Star ***************** */
+
+.about-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.about-container .image-container{
+
+  height: 200px;
+  width: 200px;
+  background-color:aliceblue;
+  background-image: url('../images/vg.jpg');
+  background-size: contain;
+  border-radius: 50% ;
+  animation: pulse 2s linear alternate infinite;
+  z-index:1 ;
+  
+  
+}
+
+.name{
+    display: flex;
+    font-size: x-large;
+    color: #00F23E;
+
+}
+
+.designation{
+    /* animation: moveleft 5s linear ; */
+    height: 4vh;
+    display: flex;
+    position: relative;
+    font-size: x-large;
+    color: #00F23E;
+
+}
+
+ .name h1:nth-child(1){
+
+    animation: visible 0.2s linear ;
+
+}
+.name h1:nth-child(2){
+
+    animation: visible .4s linear ;
+
+}
+.name h1:nth-child(3){
+
+    animation: visible .6s linear ;
+
+}
+.name h1:nth-child(4){
+
+    animation: visible .8s linear ;
+
+}
+.name h1:nth-child(5){
+
+    animation: visible 1s linear ;
+
+}
+.name h1:nth-child(6){
+
+    animation: visible 1.2s linear ;
+
+}
+.name h1:nth-child(7){
+
+    animation: visible 1.4s linear ;
+
+}
+.name h1:nth-child(8){
+
+    animation: visible 1.6s linear ;
+
+}
+.name h1:nth-child(9){
+
+    animation: visible 1.8s linear ;
+
+}
+.name h1:nth-child(10){
+
+    animation: visible 2s linear ;
+
+}
+.name h1:nth-child(11){
+
+    animation: visible 2.2s linear ;
+
+}
+.name h1:nth-child(12){
+
+    animation: visible 2.4s linear ;
+
+}
+.name h1:nth-child(13){
+
+    animation: visible 2.6s linear ;
+
+}
+.name h1:nth-child(14){
+
+    animation: visible 2.8s linear ;
+
+}
+.name h1:nth-child(15){
+
+    animation: visible 3s linear ;
+
+}
+.name h1:nth-child(16){
+
+    animation: visible 3.2s linear ;
+
+}
+.name h1:nth-child(17){
+
+    animation: visible 3.4s linear ;
+
+}
+
+/* .designation h2:nth-child(1){
+    animation: visible 3.6s linear ;
+}
+.designation h2:nth-child(2){
+    animation: visible 3.8s linear ;
+}
+.designation h2:nth-child(3){
+    animation: visible 4s linear ;
+}
+.designation h2:nth-child(4){
+    animation: visible 4.2s linear ;
+}
+.designation h2:nth-child(5){
+    animation: visible 4.4s linear ;
+}
+.designation h2:nth-child(6){
+    animation: visible 4.6s linear ;
+}
+.designation h2:nth-child(7){
+    animation: visible 4.8s linear ;
+}
+.designation h2:nth-child(8){
+    animation: visible 5s linear ;
+}
+.designation h2:nth-child(9){
+    animation: visible 5.2s linear ;
+}
+.designation h2:nth-child(10){
+    animation: visible 5.4s linear ;
+}
+.designation h2:nth-child(11){
+    animation: visible 5.6s linear ;
+}
+.designation h2:nth-child(12){
+    animation: visible 5.8s linear ;
+}
+.designation h2:nth-child(13){
+    animation: visible 6s linear ;
+}
+.designation h2:nth-child(14){
+    animation: visible 6.2s linear ;
+}
+.designation h2:nth-child(15){
+    animation: visible 6.4s linear ;
+}
+.designation h2:nth-child(16){
+    animation: visible 6.6s linear ;
+}
+.designation h2:nth-child(17){
+    animation: visible 6.8s linear ;
+}
+.designation h2:nth-child(18){
+    animation: visible 7s linear ;
+}
+.designation h2:nth-child(19){
+    animation: visible 7.2s linear ;
+}
+.designation h2:nth-child(20){
+    animation: visible 7.4s linear ;
+}
+.designation h2:nth-child(21){
+    animation: visible 7.6s linear ;
+}
+.designation h2:nth-child(22){
+    animation: visible 7.8s linear ;
+}
+.designation h2:nth-child(23){
+    animation: visible 8s linear ;
+}
+.designation h2:nth-child(24){
+    animation: visible 8.2s linear ;
+}
+.designation h2:nth-child(25){
+    animation: visible 8.4s linear ;
+} */
+
+
+
+
+
+
+.blink{
+    animation : blink-letter 1s infinite alternate;
+}
+
+h2 .blink{
+    
+    animation : blink-letter 1s infinite alternate,
+    visible  linear;
+
+}
+
+
+
+
+/* *************** About container End********************* */
+
+/* ********** Option Container start************* */
+
+.option-container{
+    height:100%;
+    width: 100%;
+    /* background-color: bisque; */
+    position: fixed;
+    color: white;
+    top: 0;
+    opacity: 1;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+
+
+.option-container .image-container .pulse-container{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: #030303;
+    border-radius: 50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow:  0 0 10px 0px aliceblue;
+    transition: box-shadow ease-out 1s, color ease-out .2s;
+}
+
+.option-container .image-container .pulse-container:hover
+{
+    /* animation: pulse 1s linear infinite .5s; */
+    /* transition: box-shadow ease-in-out .5s; */
+
+    transition-delay: 1s;
+    box-shadow: 0 0 10px 0 #00F23E, 0 0 20px 0 #00F23E;
+    color:#00F23E;
+}
+
+.pulse-container h2{
+    font-size: 1.5em;
+    /* color: aliceblue; */
+    /* transition: color ease-in-out .9s; */
+}
+
+
+
+/* .pulse-container h2:hover ,.pulse-container h3:hover{
+    transition-delay: .9s;
+    color:#00F23E;
+} */
+
+.option-container .image-container{
+    height: 50%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    /* background-color:rgb(34, 54, 71); */
+   
+  
+    
+  
+}
+
+.option-container div:nth-child(even){
+    justify-content: end;
+}
+
+.animation-dot{
+    height:100%;
+    width: 100%;
+    /* background-color: bisque; */
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    
+}
+
+.animation-dot .dot{
+    height: 5px;
+    width: 5px;
+    background-color: #00F23E;
+    box-shadow: 0 0 20px 0 red,0 0 30px 0 red;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index: 0;
+    /* animation: move-about 3s linear infinite ; */
+}
+
+
+/* ********* Profile button************* */
+
+.profile-button .button{
+    height: 10vh;
+    width: 15vw; 
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+    border-radius: 50px;
+    left: 42%;
+    bottom:10%;
+    transition:box-shadow .5s ease-in-out, color .3s ease-in-out ;
+}
+
+.profile-button .button:hover{
+    /* animation: pulse 1s linear  infinite; */
+    box-shadow: 0 0 20px 0 #00F23E ;
+    color: #00F23E;
+}
+
+
+
+
+
+
+
+
+
+.typewriter span , .typewriter2 span  {
+    display: none;
+    height: 4vh;
+    /* opacity: 0; */
+    width: calc(.15rem + (1ch * var(--chars)));
+    overflow: hidden;
+    border-right: .15rem solid ;
+    white-space: nowrap;
+    font-family: monospace;
+    animation: 
+            typing 2s steps(var(--chars)),   
+            blink .5s step-end infinite alternate;
+}
+
+@keyframes typing { from { width: 0% } }
+@keyframes blink  {	50%  { border-color: transparent } }
+
+
+
+
+
+/* .typing {
+    position: relative;
+}
+.typing::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: #00F23E;
+    background-color: black;
+    animation: typing 4s steps(18) forwards, caret 1s infinite;
+}
+
+.typing2 {
+    position: relative;
+}
+.typing2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: #00F23E;
+    background-color: black;
+    animation: typing 4s steps(27) forwards 4s, caret 1s infinite;
+}
+@keyframes typing {
+    to {
+        width: 0;
+   }
+}
+@keyframes caret {
+    50% {
+        color: transparent;
+   }
+} */
+
+/* resposiveness */
+
+
+
+/* mobile responsive */
+@media (max-width: 480px) {
+    .option-container{
+        display: none;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .profile-button .button{
+        /* animation: pulse 1s linear  infinite; */
+        left: 22%;
+        width: 50vw;
+        box-shadow: 0 0 20px 0 #00F23E ;
+        color: #00F23E;
+    }
+    .lefttoright{
+        padding: 20% 0;
+    }
+}
+
+
+/* ipad responsive */
+@media (max-width: 800px) {
+    .option-container{
+        display: none;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .profile-button .button{
+        /* animation: pulse 1s linear  infinite; */
+        left: 22%;
+        width: 50vw;
+        box-shadow: 0 0 20px 0 #00F23E ;
+        color: #00F23E;
+    }
+    .lefttoright{
+        padding: 20% 0;
+    }
+}
